@@ -25,13 +25,15 @@
 - **Institución:** Instituto Superior Politécnico Córdoba
 - **Tecnicatura Superior:** Ciencia de Datos e Inteligencia Artificial
 - **Espacio Curricular:** Álgebra
+
 - **Integrantes:**
 
- Fátima Muñoz
- Luis Alberto Lagger
- Fernando Areosa
- Guillermo Tissera
- Thiago Masciotta
+  > -Fátima Muñoz
+
+  - Luis Alberto Lagger
+  - Fernando Areosa
+  - Guillermo Tissera
+  - Thiago Masciotta
 
 - **Cohorte:** 2025
 - **Nombre / Título:** _Optimización de Recursos para un Microemprendimiento de Comida usando Sistemas de Ecuaciones Lineales_
@@ -40,7 +42,7 @@
 
 ## Tipo de Proyecto
 
-**Tecnológico**
+### **Tecnológico**
 
 ---
 
