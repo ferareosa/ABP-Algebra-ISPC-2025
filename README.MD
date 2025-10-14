@@ -28,8 +28,7 @@
 
 - **Integrantes:**
 
-  > -Fátima Muñoz
-
+  - Fátima Muñoz
   - Luis Alberto Lagger
   - Fernando Areosa
   - Guillermo Tissera
