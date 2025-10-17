@@ -1,4 +1,4 @@
-# Optimización de Recursos para un Microemprendimiento de Comida
+# Sistema Predictivo de Valuación Inmobiliaria para Córdoba Capital
 
 ### Proyecto ABP - Álgebra Lineal
 
@@ -35,7 +35,7 @@
   - Thiago Masciotta
 
 - **Cohorte:** 2025
-- **Nombre / Título:** _Optimización de Recursos para un Microemprendimiento de Comida usando Sistemas de Ecuaciones Lineales_
+- **Nombre / Título:** _Sistema Predictivo de Valuación Inmobiliaria para Córdoba Capital mediante Regresión Lineal Multivariable_
 
 ---
 
@@ -43,70 +43,71 @@
 
 ### **Tecnológico**
 
+Este proyecto se desarrolla con un enfoque tecnológico: se implementa un prototipo de software que incorpora métodos de regresión lineal múltiple y álgebra matricial para estimar precios de propiedades.
+
 ---
 
 ## Ejes / Unidades Conceptuales
 
 - Sistemas de ecuaciones lineales
-- Representación gráfica de restricciones
 - Álgebra matricial aplicada
-- Métodos de resolución (Gráfico / Gauss)
-- Funciones objetivo y optimización lineal básica
+- Regresión lineal múltiple
+- Representación de datos y preprocesamiento
+- Métricas de evaluación y validación
+- Interpretación de coeficientes y significancia
 
 ---
 
 ## Problemática / Necesidad / Caso
 
-Un estudiante quiere emprender un pequeño negocio de venta de sándwiches y jugos dentro de la facultad.
+### Problemática identificada
 
-**Restricciones:**
+En la práctica del mercado inmobiliario de Córdoba Capital existe la ausencia de una herramienta estandarizada y objetiva que permita estimar el valor de una propiedad a partir de sus características técnicas y contextuales. Esto conlleva:
 
-- Presupuesto disponible: $15.000
-- Capacidad máxima de almacenamiento: 50 unidades (sándwiches + jugos)
-- Costo unitario sándwich: $300
-- Costo unitario jugo: $200
-- Precio de venta sándwich: $800
-- Precio de venta jugo: $500
+- Valuaciones subjetivas y discrecionales.
+- Sobreprecios y subvaluaciones en transacciones.
+- Dificultad para inversores y propietarios para fijar precios justos.
+- Falta de transparencia y comparabilidad entre ofertas.
 
-**Necesidad:** Maximizar la ganancia respetando las restricciones de presupuesto y capacidad.
+### Caso de uso
+
+Proveer una herramienta web interactiva que, a partir de un conjunto de variables de entrada (metros cuadrados, cantidad de habitaciones, antigüedad, zona, tipo de propiedad, etc.), entregue una estimación de precio basada en un modelo de regresión lineal múltiple entrenado con datos representativos del mercado de Córdoba Capital.
 
 ---
 
 ## Fundamentación / Hipótesis
 
-El proyecto aplica **sistemas de ecuaciones lineales** para resolver un **problema real de optimización** en un contexto accesible para estudiantes.  
-Mediante la formulación matemática del problema, se busca obtener la **combinación óptima de producción de sándwiches y jugos** que maximiza la ganancia neta.
+### Fundamentación
 
-**Hipótesis:**
+La regresión lineal múltiple, formulada en términos de álgebra matricial, es un enfoque clásico y sólido para estimar relaciones lineales entre una variable dependiente (precio) y múltiples variables independientes (características de la propiedad). Aplicar este enfoque permite construir un modelo interpretable, reproducible y con fundamentos matemáticos claros, compatible con los objetivos pedagógicos del espacio curricular de Álgebra.
 
-> Si se plantean las restricciones como un sistema de inecuaciones lineales y se utiliza la función objetivo adecuada, es posible determinar la producción óptima de sándwiches y jugos que maximiza la ganancia total.
+### Hipótesis
 
-**Relevancia profesional:**
+Se plantea la hipótesis de trabajo:
 
-- Aplicación directa de Álgebra Lineal en problemas reales.
-- Comprensión de modelos de optimización.
-- Transferencia a contextos emprendedores y productivos reales.
+> Es posible desarrollar un modelo de regresión lineal múltiple que prediga el valor de propiedades en Córdoba Capital con precisión suficiente para ser útil como herramienta de aproximación (objetivo deseado: R² ≥ 0.85 en datos de validación con un dataset representativo).
 
-**Impacto:**
+### Relevancia profesional y social
 
-- Fomento de habilidades analíticas y de resolución de problemas.
-- Potencial de uso como modelo base para otros emprendimientos similares.
+- Fomenta la aplicación práctica del álgebra lineal a problemas reales.
+- Contribuye a la transparencia del mercado inmobiliario local.
+- Provee una herramienta accesible para pequeños inversores y propietarios.
 
 ---
 
 ## Objetivo General
 
-Desarrollar un **modelo matemático y una herramienta de software interactiva** que permita optimizar la producción de sándwiches y jugos maximizando la ganancia bajo restricciones reales de presupuesto y capacidad.
+Desarrollar un sistema de valuación inmobiliaria basado en álgebra lineal que prediga precios de propiedades en Córdoba Capital mediante regresión lineal múltiple, integrando variables clave y proporcionando una interfaz interactiva para su uso.
 
 ---
 
 ## Objetivos Específicos
 
-1. Formular matemáticamente el problema como un sistema de ecuaciones e inecuaciones lineales.
-2. Representar gráficamente las restricciones para visualizar el espacio factible.
-3. Implementar un modelo algebraico para encontrar la solución óptima.
-4. Desarrollar una interfaz simple de uso para introducir parámetros personalizados.
-5. Validar la solución mediante métodos manuales y computacionales.
+1. Recopilar y estructurar un dataset representativo del mercado inmobiliario de Córdoba Capital.
+2. Implementar el modelo de regresión lineal múltiple mediante álgebra matricial y técnicas de estimación por mínimos cuadrados.
+3. Desarrollar una interfaz web interactiva que permita introducir variables y obtener la predicción de precio.
+4. Validar el modelo mediante métricas estadísticas (R², MSE, RMSE, MAE) y técnicas de validación cruzada.
+5. Documentar el proceso matemático, de implementación y los resultados obtenidos.
 
 ---
 
@@ -115,104 +116,94 @@ Desarrollar un **modelo matemático y una herramienta de software interactiva** 
 | Momento | Actividad                                | Fechas estimadas |
 | ------- | ---------------------------------------- | ---------------- |
 | 1       | Elección de grupos y definición del caso | 01/09 - 05/09    |
-| 2       | Identificación de la problemática        | 08/09 - 12/09    |
-| 3       | Entrega parcial (Evidencia 3)            | 06/10 - 10/10    |
-| 4       | Entrega final escrita                    | 13/10 - 17/10    |
-| 5       | Defensa oral                             | 20/10 - 24/10    |
+| 2       | Recopilación y limpieza de datos         | 08/09 - 20/09    |
+| 3       | Implementación del modelo                | 21/09 - 03/10    |
+| 4       | Desarrollo de la interfaz (Streamlit)    | 04/10 - 09/10    |
+| 5       | Validación, pruebas y ajuste             | 10/10 - 12/10    |
+| 6       | Entrega final escrita y presentación     | 13/10 - 17/10    |
 
 ---
 
 ## Desarrollo Algebraico y Modelo Matemático
 
-### Planteo del Sistema
+### 1. Planteo del modelo
 
-El problema puede modelarse mediante **ecuaciones lineales con restricciones**:
+Se utiliza una regresión lineal múltiple formulada en términos matriciales:
 
-**Variables:**
+\[ Y = X\beta + \varepsilon \]
 
-- `x`: cantidad de sándwiches a producir
-- `y`: cantidad de jugos a producir
+Donde:
 
-**Restricciones:**
+- \(Y\) es el vector columna de valores observados (precios).
+- \(X\) es la matriz de diseño que incluye una columna de unos para el intercepto y una columna por cada variable predictora.
+- \(\beta\) es el vector de coeficientes a estimar.
+- \(\varepsilon\) es el vector de errores/residuos.
 
-1. **Presupuesto total:**
+### 2. Matriz de diseño
 
-300x + 200y ≤ 15000
+Ejemplo de fila de \(X\) (para una observación i):
 
-2. **Capacidad de almacenamiento:**
+\[ [1\quad m^2_i\quad hab_i\quad antig_i\quad zona_i\quad tipo_i] \]
 
-x + y ≤ 50
+Correspondiendo a las variables:
 
-3. **No negatividad:**
+- `m²`: metros cuadrados
+- `hab`: cantidad de habitaciones
+- `antig`: antigüedad en años
+- `zona`: indicador o codificación de zona (variable categórica codificada)
+- `tipo`: tipo de propiedad (departamento, casa, PH, etc.)
 
-x ≥ 0 , y ≥ 0
+### 3. Estimación de coeficientes (método de mínimos cuadrados)
 
-**Función Objetivo (Ganancia):**
+La solución de mínimos cuadrados ordinarios (OLS) se calcula mediante la expresión matricial:
 
-G = 500x + 300y → MAXIMIZAR
+\[ \hat{\beta} = (X^{T}X)^{-1} X^{T} Y \]
 
----
+En implementación práctica se recomienda usar la pseudoinversa o técnicas numéricas estables (por ejemplo `np.linalg.pinv`) para evitar inestabilidades cuando \(X^{T}X\) esté próxima a singular.
 
-### Método de Resolución
+### 4. Preprocesamiento y codificación
 
-#### 1. Método Gráfico
+- Normalización / estandarización de variables numéricas (opcional según técnica).
+- Codificación de variables categóricas (one-hot encoding o ordinal encoding según análisis).
+- Imputación de valores faltantes cuando corresponda.
+- Detección y tratamiento de outliers que puedan sesgar la estimación.
 
-1. Representar las restricciones como rectas en el plano.
-2. Delimitar la **región factible** (intersección de todas las restricciones).
-3. Evaluar la función objetivo `G` en cada **vértice** de dicha región.
-4. Escoger el punto `(x, y)` con la **mayor ganancia**.
+### 5. Métricas de evaluación
 
-#### 2. Método Matricial (opcional)
+- Coeficiente de determinación (R²).
+- Error cuadrático medio (MSE).
+- Raíz del error cuadrático medio (RMSE).
+- Error absoluto medio (MAE).
 
-Representación en forma general:
+### 6. Validación
 
-A · X = B
-
-donde  
-`A` = matriz de coeficientes,  
-`X` = vector de incógnitas `[x, y]`,  
-`B` = vector de términos independientes.
-
-Resolución:
-
-X = A⁻¹ · B
-
-o bien mediante **eliminación de Gauss** para verificar consistencia y solución.
+- División entrenamiento/prueba (por ejemplo 80/20).
+- Validación cruzada K-fold para estimar la estabilidad del modelo.
 
 ---
 
 ## Instructivo de Uso del Software
 
-El software desarrollado permite resolver el problema de optimización **de forma automática e interactiva**.
+El software desarrollado permite resolver y estimar precios de forma automática e interactiva.
 
 ### Tecnologías utilizadas
 
 - **Lenguaje:** Python 3.10+
-- **Librerías:** `numpy`, `matplotlib`, `streamlit`
-- **Ejecución local o web:** mediante interfaz gráfica con _Streamlit_
+- **Librerías:** `numpy`, `pandas`, `scikit-learn`, `matplotlib`, `streamlit`
+- **Ejecución local o web:** interfaz con Streamlit
 
 ---
 
 ### Instalación
 
-1. Clonar el repositorio:
+1. Clonar el repositorio (el enlace en el README es correcto):
 
-```bash
+```powershell
 git clone https://github.com/ferareosa/ABP-Algebra-ISPC-2025.git
-cd optimizacion-sandwiches-jugos
+cd ABP-Algebra-ISPC-2025
 ```
 
-2. Crear entorno virtual e instalar dependencias
-
-- Linux / macOS:
-
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-- Windows (PowerShell):
+2. Crear un entorno virtual e instalar dependencias (PowerShell):
 
 ```powershell
 python -m venv venv
@@ -220,78 +211,184 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-3. Ejecutar la aplicación (Streamlit):
-
-```bash
-python -m streamlit run interfaz/app_streamlit.py
-```
+3. Opcional: en Windows se proporciona un lanzador por lotes (`lanzador.bat`) que ejecuta el script `lanzador.py` para abrir Streamlit automáticamente.
 
 ---
 
 ### Uso
 
-1. Ingresar datos personalizados:
+Hay dos formas recomendadas de ejecutar la interfaz web:
 
-   - Costo de sándwich y jugo
+- Ejecutar el lanzador (abre el navegador automáticamente):
 
-   - Precio de venta
-
-   - Presupuesto máximo
-
-   - Capacidad de almacenamiento
-
-2. El sistema calculará automáticamente:
-
-   - Restricciones y región factible
-
-   - Puntos de intersección
-
-   - Ganancia máxima
-
-   - Representación gráfica de la solución
-
-Salida esperada:
-
-```bash
-Producción óptima:
-x = 30  (sándwiches)
-y = 20  (jugos)
-
-Ganancia máxima: $21,000
+```powershell
+python lanzador.py
 ```
+
+- Ejecutar Streamlit directamente (útil para desarrollo):
+
+```powershell
+streamlit run interfaz/app_streamlit.py --server.headless true --browser.gatherUsageStats false
+```
+
+Al abrirse la aplicación en el navegador podrás:
+
+1. Usar la "Calculadora de Valuación" para ingresar:
+   - Metros cuadrados (m²)
+   - Número de habitaciones
+   - Antigüedad (años)
+   - Zona (seleccionable)
+   - Tipo de propiedad (seleccionable)
+2. Pulsar "Calcular Valuación" para obtener la predicción.
+3. Navegar a las pestañas de "Análisis del Modelo", "Dataset y Validación", "Gestión de Datos" e "Información Técnica" para ver métricas, gráficos y administrar la base de datos integrada.
 
 ---
 
-### Ejemplo de Ejecución
+### Ejemplo de ejecución (salida de consola)
+
+El proyecto incluye una interfaz de consola y un script de demostración (`main.py`) que producen una salida similar a la siguiente cuando se ejecutan desde la terminal:
 
 ```txt
-    >> Costo sandwich: 300
-    >> Costo jugo: 200
-    >> Presupuesto total: 15000
-    >> Capacidad total: 50
+⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️
+🏠 SISTEMA DE VALUACIÓN INMOBILIARIA - VERSIÓN DEFINITIVA
+⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️⚡️
 
-    --> Resultados:
-    x = 30, y = 20
-    Ganancia total: $21,000
+🔬 1. INICIALIZANDO SISTEMA COMPLETO...
+   ✅ Base de datos: 150 propiedades registradas
+
+📊 2. ESTADÍSTICAS DEL MERCADO INMOBILIARIO:
+   💰 Precio promedio: $123,456 USD
+   📏 Metros cuadrados promedio: 95.3 m²
+
+🧠 3. ENTRENANDO MODELO DE REGRESIÓN LINEAL MÚLTIPLE...
+   ✅ Modelo entrenado con 5 variables predictoras
+   🏆 Precisión del modelo (R²): 0.8794
+   📉 Error absoluto medio: $62,213 USD
+
+🔎 5. DEMOSTRACIÓN DE PREDICCIONES EN TIEMPO REAL:
+
+   🏡 EJEMPLO 1 - CASA FAMILIAR:
+      • 150m², 3 habitaciones, 8 años, Zona 2 (Céntrica), Casa
+      💰 Precio estimado: $234,567 USD
+      📐 Precio por m²: $1,563 USD/m²
+
+   🏢 EJEMPLO 2 - DEPARTAMENTO MODERNO:
+      • 85m², 2 habitaciones, 3 años, Zona 1 (Centro), Departamento
+      💰 Precio estimado: $123,456 USD
+      📐 Precio por m²: $1,452 USD/m²
+
+Para abrir la interfaz web en vez de la consola, ejecuta:
+    python lanzador.py
+o directamente:
+    streamlit run interfaz/app_streamlit.py
+
 ```
 
-Gráficamente, el software mostrará las rectas de restricción y marcará el punto óptimo en el vértice de la región factible.
+> Nota: los valores numéricos en este ejemplo son ilustrativos. Los números reales dependen del dataset cargado y del entrenamiento del modelo.
 
 ---
 
 ## Producto Final / Resultados Esperados
 
-| Aspecto                              | Descripción                                                                                             |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| **Producto desarrollado**            | Aplicación Python + interfaz web para resolución de problemas de optimización lineal.                   |
-| **Resultados matemáticos esperados** | Determinar la combinación óptima `(x, y)` que maximiza la ganancia sin exceder presupuesto o capacidad. |
-| **Aplicación didáctica**             | Herramienta educativa para demostrar el uso práctico de álgebra lineal en contextos reales.             |
-| **Impacto social y formativo**       | Promueve la comprensión del pensamiento lógico y la capacidad de modelar problemas reales.              |
+| Aspecto                              | Descripción                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------ |
+| **Producto desarrollado**            | Aplicación Python + interfaz web para estimación de precios inmobiliarios.           |
+| **Resultados matemáticos esperados** | Modelo de regresión lineal múltiple implementado y validado con métricas reportadas. |
+| **Aplicación didáctica**             | Material de uso pedagógico para entender regresión y álgebra matricial aplicada.     |
+| **Impacto social y formativo**       | Facilita acceso a estimaciones objetivas del mercado inmobiliario local.             |
 
-### Conclusiones
+---
 
-- La aplicación de **sistemas de ecuaciones lineales** permite optimizar decisiones de producción en contextos reales y sencillos.
-- El uso de restricciones presupuestarias y de capacidad posibilita **modelar situaciones económicas concretas** y obtener soluciones eficientes.
-- El álgebra lineal funciona como **herramienta base para problemas de optimización**, brindando claridad matemática y soporte a la toma de decisiones.
-- El software desarrollado no solo resuelve el problema automáticamente, sino que también sirve como **material pedagógico** para comprender el proceso paso a paso.
-- Este proyecto integra **modelado matemático + programación + aplicación práctica**, demostrando la potencia del enfoque ABP (Aprendizaje Basado en Proyectos) en la formación técnica y científica.
+## Implementación técnica (detalles adicionales)
+
+### Arquitectura propuesta
+
+- **Capa de datos:** Dataset local (CSV) o base de datos ligera (SQLite) con registros de propiedades.
+- **Capa de procesamiento:** Scripts de Python encargados de preprocesamiento y entrenamiento del modelo.
+- **Capa de modelo:** Módulo que expone funciones para cargar coeficientes y realizar predicciones.
+- **Capa de presentación:** Interfaz Streamlit que consume la capa de modelo.
+
+### Estructura de carpetas sugerida
+
+```
+optimización-sandwiches-jugos/
+├─ data/
+│  ├─ dataset_inmobiliario.csv
+│  └─ README_data.md
+├─ interfaz/
+│  └─ app_streamlit.py
+├─ src/
+│  ├─ preprocessing.py
+│  ├─ model.py
+│  └─ evaluation.py
+├─ notebooks/
+│  └─ exploration.ipynb
+├─ requirements.txt
+└─ README.MD
+```
+
+> Mantuvimos el nombre de la carpeta raíz tal como en el README original para preservar compatibilidad con instrucciones previas.
+
+---
+
+## Resultados matemáticos y ejemplos (resumen)
+
+### Ecuación final (ejemplo derivado del conjunto de trabajo)
+
+Precio = β₀ + β₁·m² + β₂·habitaciones + β₃·antigüedad + β₄·zona + β₅·tipo
+
+Donde los coeficientes son estimados por la fórmula de mínimos cuadrados.
+
+### Métricas reportadas (ejemplo)
+
+- R² (entrenamiento): 0.8980
+- R² (validación): 0.8794
+- MAE: $62.213
+
+> Los valores exactos dependen del dataset y del proceso de validación; se incluyen aquí como referencia del proyecto.
+
+---
+
+## Limitaciones y consideraciones
+
+- La regresión lineal asume relaciones lineales entre variables predictoras y la variable objetivo; si existen relaciones no lineales fuertes, pueden requerirse transformaciones o modelos alternativos.
+- Calidad y tamaño del dataset afectan fuertemente la capacidad de generalización.
+- Variables categóricas mal codificadas o zonas mal definidas pueden introducir sesgos.
+- La presencia de outliers puede distorsionar la estimación de coeficientes; es recomendable su detección y tratamiento.
+
+---
+
+## Trabajo futuro / Extensiones posibles
+
+- Incorporar regularización (Ridge, Lasso) para mejorar estabilidad y reducir sobreajuste.
+- Explorar modelos no lineales (árboles, random forest, gradient boosting) y comparar desempeño.
+- Ampliar el dataset con fuentes públicas y scraping controlado para mejorar representatividad.
+- Implementar un API REST simple para exponer el modelo en producción.
+- Agregar visualizaciones avanzadas y explicación de modelos (SHAP, LIME) para interpretar predicciones.
+
+---
+
+## Referencias y bibliografía
+
+- Textos básicos de álgebra lineal y estadística aplicada.
+- Documentación de `scikit-learn` sobre regresión lineal y métricas.
+- Recursos de Streamlit para desarrollo de interfaces interactivas.
+
+---
+
+## Agradecimientos
+
+A los docentes y compañeros por la guía durante la realización del proyecto.
+
+---
+
+## Licencia
+
+Este repositorio se entrega con fines académicos. Consultar con el equipo para usos distintos a la evaluación educativa.
+
+---
+
+## Anexos
+
+- Archivos de datos y notebooks en la carpeta `data/` y `notebooks/`.
+- Documentación matemática ampliada disponible en `docs/` (opcional).
