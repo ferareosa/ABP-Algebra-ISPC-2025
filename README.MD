@@ -16,7 +16,7 @@
 8. [Cronograma](#cronograma)
 9. [Desarrollo Algebraico y Modelo Matemático](#desarrollo-algebraico-y-modelo-matemático)
 10. [Instructivo de Uso del Software](#instructivo-de-uso-del-software)
-11. [Producto Final / Resultados Esperados](#producto-final--resultados-esperados)
+11. [Poster](#poster)
 
 ---
 
@@ -299,40 +299,6 @@ o directamente:
 
 ---
 
-## Implementación técnica (detalles adicionales)
-
-### Arquitectura propuesta
-
-- **Capa de datos:** Dataset local (CSV) o base de datos ligera (SQLite) con registros de propiedades.
-- **Capa de procesamiento:** Scripts de Python encargados de preprocesamiento y entrenamiento del modelo.
-- **Capa de modelo:** Módulo que expone funciones para cargar coeficientes y realizar predicciones.
-- **Capa de presentación:** Interfaz Streamlit que consume la capa de modelo.
-
-### Estructura de carpetas sugerida
-
-```
-optimización-sandwiches-jugos/
-├─ data/
-│  ├─ dataset_inmobiliario.csv
-│  └─ README_data.md
-├─ interfaz/
-│  └─ app_streamlit.py
-├─ src/
-│  ├─ preprocessing.py
-│  ├─ model.py
-│  └─ evaluation.py
-├─ notebooks/
-│  └─ exploration.ipynb
-├─ requirements.txt
-└─ README.MD
-```
-
-> Mantuvimos el nombre de la carpeta raíz tal como en el README original para preservar compatibilidad con instrucciones previas.
-
----
-
-## Resultados matemáticos y ejemplos (resumen)
-
 ### Ecuación final (ejemplo derivado del conjunto de trabajo)
 
 Precio = β₀ + β₁·m² + β₂·habitaciones + β₃·antigüedad + β₄·zona + β₅·tipo
@@ -368,6 +334,12 @@ Donde los coeficientes son estimados por la fórmula de mínimos cuadrados.
 
 ---
 
+## Poster
+
+<img src="./ABP-poster.png" alt="poster abp"/>
+
+---
+
 ## Referencias y bibliografía
 
 - Textos básicos de álgebra lineal y estadística aplicada.
@@ -376,19 +348,8 @@ Donde los coeficientes son estimados por la fórmula de mínimos cuadrados.
 
 ---
 
-## Agradecimientos
-
-A los docentes y compañeros por la guía durante la realización del proyecto.
-
----
-
 ## Licencia
 
 Este repositorio se entrega con fines académicos. Consultar con el equipo para usos distintos a la evaluación educativa.
 
 ---
-
-## Anexos
-
-- Archivos de datos y notebooks en la carpeta `data/` y `notebooks/`.
-- Documentación matemática ampliada disponible en `docs/` (opcional).
