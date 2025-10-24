@@ -338,6 +338,8 @@ Donde los coeficientes son estimados por la fórmula de mínimos cuadrados.
 
 <img src="./ABP-poster.png" alt="poster abp"/>
 
+[Descargar](https://drive.google.com/file/d/1_nYUu0va2f51v84nK2L492AeR_Py_kpb/view?usp=sharing)
+
 ---
 
 ## Referencias y bibliografía
